@@ -1,4 +1,5 @@
-#For Deployment kind Referance
+#For Deployment kind Reference
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
