@@ -2,9 +2,9 @@
 
 What is Kubernetes -
 
-> Open-source container orchestration tool
-> Developed by Google
-> Help you manage containerized applications on different environments
+> Open-source container orchestration tool,
+> Developed by Google,
+> Help you manage containerized applications in different environments.
 
   1. Master component
 
