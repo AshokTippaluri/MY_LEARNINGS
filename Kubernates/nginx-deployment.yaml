@@ -1,4 +1,4 @@
-#For Deployment kind Reference
+# For Deployment kind Reference
 
 apiVersion: apps/v1
 kind: Deployment
