@@ -1,0 +1,102 @@
+Personal 
+Linux
+
+linuxjourney.com
+https://overthewire.org/wargames/bandit/
+https://linuxsurvival.com/
+
+
+Data Streams -
+
+stdin - 0
+stdout -1
+stderr -2
+
+It will show the data streams out of previous command $ echo$?
+Example - $ find /etc/ -type f 0> ashok.txt 1>chandra.txt 2>reddy.txt
+Here above example can use like this $ find /etc/ -type f >chandra.txt 2>reddy.txt 
+https://youtu.be/zMKacHGuIHI?si=JpKTCDU_vpPxZfdw
+
+Text-Fu
+
+cut - remove sections from each line of files
+
+cut OPTION... [FILE]...
+Examples -
+
+[atippalu@ddsmzbxs1 ~]$ cat sample.txt
+The quick brown; fox jumps over the lazy dog
+[atippalu@ddsmzbxs1 ~]$ cut -b 1 sample.txt
+T
+[atippalu@ddsmzbxs1 ~]$ cut -b 1-2 sample.txt
+Th
+[atippalu@ddsmzbxs1 ~]$ cut -b 1-20 sample.txt
+The quick brown; fox
+[atippalu@ddsmzbxs1 ~]$ cut -b 5-10,4,18-21 sample.txt
+quick fox
+[atippalu@ddsmzbxs1 ~]$ cut -d " " -f 1,2 sample.txt
+The quick
+[atippalu@ddsmzbxs1 ~]$ cut -d ":" -f 1 /etc/passwd
+root
+bin
+daemon
+adm
+lp
+sync
+shutdown
+halt
+[atippalu@ddsmzbxs1 ~]$ cut -d ":" -f 1,7 /etc/passwd | grep "nginx"
+nginx:/sbin/nologin
+
+paste - merge lines of files
+
+paste [OPTION]... [FILE]...
+Examples -
+
+[atippalu@ddsmzbxs1 ~]$ paste numbers alphabets
+1       a
+2       s
+3       d
+4       f
+5       g
+6       h
+[atippalu@ddsmzbxs1 ~]$ paste -d "|" numbers alphabets
+1|a
+2|s
+3|d
+4|f
+5|g
+6|h
+[atippalu@ddsmzbxs1 ~]$ cat numbers | paste - -
+1       2
+3       4
+5       6
+
+[atippalu@ddsmzbxs1 ~]$ cat numbers | paste - - -
+1       2       3
+4       5       6
+
+
+head
+tail
+expand and unexpand
+join and spilt
+sort
+tr
+uniq
+wc and nl
+grep
+regex (regular expression)
+vim
+emacs
+user management
+
+
+
+Networking
+git
+cloud computing
+iac
+container
+CI/CD
+deployment stages
